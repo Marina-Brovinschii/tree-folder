@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Folder Tree</title>
+    <style>
+        body {
+            background-color: rgb(3, 3, 138);
+            padding-left: 100px;
+            margin-top: -300px;
+        }
+        .tree {
+            color: white;
+            font-size: 18px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 74px;
+        }
+        .folder {
+            background-image: url(images/Actions-file-open-icon.png);
+            background-repeat: no-repeat;
+            padding: 20px 0 20px 84px;
+            list-style-type: "┠";
+            line-height: 15px;
+        }
+        .folder:hover {
+            color: rgba(138, 138, 234, 0.695);
+            border-color: rgba(138, 138, 234, 0.695); 
+        }
+        .folder2 {
+            background-image: url(images/Places-folder-video-icon.png);
+        }
+        .name {
+            font-size: 18px;
+        }
+        .name:hover {
+            color: cadetblue;
+        }
+        .folder:last-child {
+            list-style-type: "┖";
+        }
+        .folder-D {
+            background-image: none;
+            list-style-type: "";
+            font-size: 30px;
+            padding-left: 1px;
+            margin-left: -80px;
+        }
+        .documente {
+            padding: 20px 0 20px 0px;
+            margin-bottom: -40px;
+        }
+        .word {
+            background-image: url(images/Mimetypes-application-msword-icon.png);
+        }
+        .excel {
+            background-image: url(images/Mimetypes-application-vnd.ms-excel-icon.png);
+        }
+        .point {
+            background-image: url(images/Mimetypes-application-vnd.ms-powerpoint-icon.png);
+        }
+        .pdf {
+            background-image: url(images/Mimetypes-eps-icon.png);
+        }
+        .muzica {
+            background-image: url(images/Places-folder-music-icon.png);
+        }
+        .newdoc {
+            background-image: url(images/Mimetypes-gtk-file-icon.png);
+        }
+    </style>
+</head>
+<body>
+    <ul class="tree">
+        <div style="border-left: 8px solid white; height: 300px;transform: translateX(-41px) translateY(404px);"></div>
+        <li class="folder-D">Disc D</li>
+        <li class="folder">
+            <div class="name">Documente</div>
+            <ul class="documente">
+                <li class="folder word">
+                    <div class="name">DocWord</div>
+                </li>
+                <li class="folder excel">
+                    <div class="name">DocExcel</div>
+                </li>
+                <li class="folder point">
+                    <div class="name">DocPoint</div>
+                </li>
+                <li class="folder pdf">
+                    <div class="name">DocPDF</div>
+                </li>
+            </ul>
+        </li>
+        <li class="folder folder2">
+            <div class="name">Filme</div>
+        </li>
+        <li class="folder">
+            <div class="name">Diferite</div>
+            <ul class="documente">
+                <li class="folder muzica">
+                    <div class="name">Muzica</div>
+                </li>
+                <li class="folder newdoc">
+                    <div class="name">NewDoc</div>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</body>
+</html>
